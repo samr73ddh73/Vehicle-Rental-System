@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/getting-started/javascript/#util"></script>
+    <style type="text/css">
+        .carousel-indicators {
+            border-radius: 0px;
+        }
+
+        #myCarousel {
+            width: 100%;
+            height: 50%;
+        }
+
+        .btn {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div  class="carousel slide myCarousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner center">
+            <div class="item active d-block w-100">
+                <img src="./img/slideshow1.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item d-block w-100">
+                <img src="./img/slideshow2.jpg" alt="Chicago">
+            </div>
+
+            <div class="item d-block w-100">
+                <img src="./img/slideshow3.jpg" alt="New York">
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container ">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" class="thead-dark">RENT YOUR VEHICLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <form >
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <label>Vehicle Type-</label><br>
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Scooty
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Bike
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Source Dock</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>SJT</option>
+                                    <option>TT</option>
+                                    <option>SMV</option>
+                                    <option>GDN</option>
+                                    <option>Main Gate</option>
+                                    <option>Gate 2</option>
+                                </select>
+                            </div>
+                            <label>Time:</label><br />
+                            <div class="container">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class='input-group date' >
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <button class="btn btn-success">Pay</button>
+                </form>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+</body>
